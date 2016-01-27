@@ -49,7 +49,7 @@ module.exports = function LocalizationModule(pb) {
          * @property language Really should be renamed to locale in the future
          * @type {String}
          */
-        this.language = Localization.best(request, options.supported).toString();
+        this.language = "vn-vn";//Localization.best(request, options.supported).toString();
 
         /**
          * @property localeObj
@@ -880,7 +880,7 @@ module.exports = function LocalizationModule(pb) {
      * @return {String} The default locale
      */
     Localization.getDefaultLocale = function() {
-        return config.localization.defaultLocale || 'en-US';
+        return config.localization.defaultLocale || 'vn-VN';
     };
 
     /**
